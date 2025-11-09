@@ -1,18 +1,17 @@
 import React from "react";
 import "./Header.css";
 
-function Header(){
+function Header({setActivePage}){
     return (
         <header className="header">
             <div className="nameBox">
-                <h1>Igor Diniz da Silveira Gonsales</h1>
-                <p>Entry Level Web Developer</p>
+                <h1 className="name">Igor Diniz da Silveira Gonsales</h1>
+                <p className="title">Entry Level Web Developer</p>
             </div>
             <nav className="navigation">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+                <button className="link" onClick={() => setActivePage("about")}>About</button>
+                <button className="link" onClick={() => setActivePage("projects")}>Projects</button>
+                <button className="link" onClick={() => setActivePage("contact")}>Contact</button>
             </nav>
         </header>
     );

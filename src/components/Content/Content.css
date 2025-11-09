@@ -1,0 +1,19 @@
+.html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background-color: rgb(50, 50, 50);
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+@media (max-width: 768px) {
+    .content{
+        padding-top: 10vh;
+        height: 100%;
+    }
+}

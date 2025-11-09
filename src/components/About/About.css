@@ -1,0 +1,91 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutText{
+    width: 75%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    color: rgb(147, 212, 255);
+}
+
+li{
+    color: rgb(147, 212, 255);
+}
+
+.aboutPicture{
+    width: 20%;
+}
+
+#picture{
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+h2{
+    color: aliceblue;
+}
+
+.skillRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ce9178;
+}
+
+.badge{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid rgb(255, 181, 96);
+    width: 110px;
+    background-color: rgba(255, 181, 96, 0.1);
+    cursor: default;
+}
+
+.badge:hover {
+    background-color: rgb(255, 181, 96);
+    color: #1f1f1f;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 181, 96, 0.6);
+    transition: all 0.2s ease-in-out;
+  }
+
+.logo{
+    height: 4vh;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .aboutContainer{
+        flex-direction: column-reverse;
+    }
+
+    .aboutPicture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #picture{
+        width: 50%;
+    }
+
+    .aboutText{
+        width: 100%;
+    }
+}
