@@ -33,7 +33,7 @@ function About(){
                 <h2>Spoken Languages</h2>
                 <ul>
                     <li>Brazilian Portuguese - Native</li>
-                    <li>English - Fluent</li>
+                    <li>English - Advanced</li>
                 </ul>
 
                 <h2>Skills</h2>

@@ -1,2 +1,53 @@
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contactInfo{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    border: 2px solid rgb(255, 181, 96);
+    border-radius: 8px;
+    background-color: rgba(255, 181, 96, 0.1);
+    cursor: pointer;
+}
+
+.contactInfo:hover{
+    background-color: rgb(255, 181, 96);
+    color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 181, 96, 0.6);
+    transition: all 0.2s ease-in-out;
+}
+
+.icon{
+    height: 5vh;
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .contact{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .contactInfo{
+        width: auto;
+        justify-content: left;
+    }
 }
