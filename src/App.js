@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
@@ -23,7 +24,19 @@ function App(){
 	return (
 		<div className="container">
 			<Header setActivePage = {setActivePage}></Header>
-			<Content>{renderPage()}</Content>
+			<Content>
+				<AnimatePresence mode="wait">
+					<motion.div
+						key={activePage}
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						transition={{ duration: 0.2 }}
+          			>
+						{renderPage()}
+					</motion.div>
+				</AnimatePresence>
+			</Content>
 		</div>
 	)
 }

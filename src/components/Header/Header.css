@@ -55,6 +55,7 @@
         width: 100%;
         flex-direction: column;
         position: fixed;
+        height: 15vh;
     }
     
     .nameBox{
@@ -66,7 +67,7 @@
     }
 
     .name{
-        font-size: medium;
+        font-size: larger;
     }
 
     .title{
